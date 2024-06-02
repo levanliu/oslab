@@ -15,77 +15,11 @@
             "-g",
             "-fno-pic",
             "-o",
-            "kernel/vga.o",
-            "kernel/vga.c"
+            "main.o",
+            "main.c"
         ],
         "directory": "/home/levan/nju-oslab/kernel",
-        "file": "kernel/vga.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I../lib",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "../lib/sys.o",
-            "../lib/sys.S"
-        ],
-        "directory": "/home/levan/nju-oslab/user",
-        "file": "../lib/sys.S"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I../lib",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "wc.o",
-            "wc.c"
-        ],
-        "directory": "/home/levan/nju-oslab/user",
-        "file": "wc.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I../lib",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "grind.o",
-            "grind.c"
-        ],
-        "directory": "/home/levan/nju-oslab/user",
-        "file": "grind.c"
+        "file": "main.c"
     },
     {
         "arguments": [
@@ -103,11 +37,11 @@
             "-g",
             "-fno-pic",
             "-o",
-            "kernel/i8259.o",
-            "kernel/i8259.c"
+            "kernel/fs.o",
+            "kernel/fs.c"
         ],
         "directory": "/home/levan/nju-oslab/kernel",
-        "file": "kernel/i8259.c"
+        "file": "kernel/fs.c"
     },
     {
         "arguments": [
@@ -125,11 +59,11 @@
             "-g",
             "-fno-pic",
             "-o",
-            "ls.o",
-            "ls.c"
+            "init.o",
+            "init.c"
         ],
         "directory": "/home/levan/nju-oslab/user",
-        "file": "ls.c"
+        "file": "init.c"
     },
     {
         "arguments": [
@@ -147,209 +81,11 @@
             "-g",
             "-fno-pic",
             "-o",
-            "pingpong.o",
-            "pingpong.c"
+            "zhexuejia.o",
+            "zhexuejia.c"
         ],
         "directory": "/home/levan/nju-oslab/user",
-        "file": "pingpong.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I../lib",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "bash.o",
-            "bash.c"
-        ],
-        "directory": "/home/levan/nju-oslab/user",
-        "file": "bash.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I./include",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "kernel/disk.o",
-            "kernel/disk.c"
-        ],
-        "directory": "/home/levan/nju-oslab/kernel",
-        "file": "kernel/disk.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I../lib",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "philosopher.o",
-            "philosopher.c"
-        ],
-        "directory": "/home/levan/nju-oslab/user",
-        "file": "philosopher.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I../lib",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "cat.o",
-            "cat.c"
-        ],
-        "directory": "/home/levan/nju-oslab/user",
-        "file": "cat.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I../lib",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "../lib/stdio.o",
-            "../lib/stdio.c"
-        ],
-        "directory": "/home/levan/nju-oslab/user",
-        "file": "../lib/stdio.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I../lib",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "yieldtest.o",
-            "yieldtest.c"
-        ],
-        "directory": "/home/levan/nju-oslab/user",
-        "file": "yieldtest.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I./include",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "kernel/file.o",
-            "kernel/file.c"
-        ],
-        "directory": "/home/levan/nju-oslab/kernel",
-        "file": "kernel/file.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I../lib",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "childtest.o",
-            "childtest.c"
-        ],
-        "directory": "/home/levan/nju-oslab/user",
-        "file": "childtest.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I./include",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "kernel/kvm.o",
-            "kernel/kvm.c"
-        ],
-        "directory": "/home/levan/nju-oslab/kernel",
-        "file": "kernel/kvm.c"
+        "file": "zhexuejia.c"
     },
     {
         "arguments": [
@@ -377,20 +113,6 @@
         "arguments": [
             "gcc",
             "-c",
-            "-O2",
-            "-Wall",
-            "-Werror",
-            "-o",
-            "utils/mkfs",
-            "utils/mkfs.c"
-        ],
-        "directory": "/home/levan/nju-oslab",
-        "file": "utils/mkfs.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
             "-m32",
             "-march=i386",
             "-fno-builtin",
@@ -403,11 +125,11 @@
             "-g",
             "-fno-pic",
             "-o",
-            "killchild.o",
-            "killchild.c"
+            "bash.o",
+            "bash.c"
         ],
         "directory": "/home/levan/nju-oslab/user",
-        "file": "killchild.c"
+        "file": "bash.c"
     },
     {
         "arguments": [
@@ -447,11 +169,157 @@
             "-g",
             "-fno-pic",
             "-o",
-            "kernel/device.o",
-            "kernel/device.c"
+            "kernel/keyboard.o",
+            "kernel/keyboard.c"
         ],
         "directory": "/home/levan/nju-oslab/kernel",
-        "file": "kernel/device.c"
+        "file": "kernel/keyboard.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
+            "-I../lib",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "reader.o",
+            "reader.c"
+        ],
+        "directory": "/home/levan/nju-oslab/user",
+        "file": "reader.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
+            "-I../lib",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "yieldtest.o",
+            "yieldtest.c"
+        ],
+        "directory": "/home/levan/nju-oslab/user",
+        "file": "yieldtest.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
+            "-I../lib",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "../lib/stdlib.o",
+            "../lib/stdlib.c"
+        ],
+        "directory": "/home/levan/nju-oslab/user",
+        "file": "../lib/stdlib.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-O2",
+            "-Wall",
+            "-Werror",
+            "-o",
+            "utils/mkfs",
+            "utils/mkfs.c"
+        ],
+        "directory": "/home/levan/nju-oslab",
+        "file": "utils/mkfs.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
+            "-I./include",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "kernel/file.o",
+            "kernel/file.c"
+        ],
+        "directory": "/home/levan/nju-oslab/kernel",
+        "file": "kernel/file.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
+            "-I../lib",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "philosopher.o",
+            "philosopher.c"
+        ],
+        "directory": "/home/levan/nju-oslab/user",
+        "file": "philosopher.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
+            "-I../lib",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "rm.o",
+            "rm.c"
+        ],
+        "directory": "/home/levan/nju-oslab/user",
+        "file": "rm.c"
     },
     {
         "arguments": [
@@ -513,11 +381,11 @@
             "-g",
             "-fno-pic",
             "-o",
-            "producer.o",
-            "producer.c"
+            "killchild.o",
+            "killchild.c"
         ],
         "directory": "/home/levan/nju-oslab/user",
-        "file": "producer.c"
+        "file": "killchild.c"
     },
     {
         "arguments": [
@@ -535,33 +403,11 @@
             "-g",
             "-fno-pic",
             "-o",
-            "reader.o",
-            "reader.c"
+            "grind.o",
+            "grind.c"
         ],
         "directory": "/home/levan/nju-oslab/user",
-        "file": "reader.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I../lib",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "zhexuejia.o",
-            "zhexuejia.c"
-        ],
-        "directory": "/home/levan/nju-oslab/user",
-        "file": "zhexuejia.c"
+        "file": "grind.c"
     },
     {
         "arguments": [
@@ -579,343 +425,11 @@
             "-g",
             "-fno-pic",
             "-o",
-            "kernel/proc.o",
-            "kernel/proc.c"
+            "kernel/i8259.o",
+            "kernel/i8259.c"
         ],
         "directory": "/home/levan/nju-oslab/kernel",
-        "file": "kernel/proc.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I./include",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "kernel/lib.o",
-            "kernel/lib.c"
-        ],
-        "directory": "/home/levan/nju-oslab/kernel",
-        "file": "kernel/lib.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I./include",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "kernel/keyboard.o",
-            "kernel/keyboard.c"
-        ],
-        "directory": "/home/levan/nju-oslab/kernel",
-        "file": "kernel/keyboard.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I./include",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "kernel/irqHandle.o",
-            "kernel/irqHandle.c"
-        ],
-        "directory": "/home/levan/nju-oslab/kernel",
-        "file": "kernel/irqHandle.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-I./include",
-            "-o",
-            "kernel/doIrq.o",
-            "kernel/doIrq.S"
-        ],
-        "directory": "/home/levan/nju-oslab/kernel",
-        "file": "kernel/doIrq.S"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I../lib",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "init.o",
-            "init.c"
-        ],
-        "directory": "/home/levan/nju-oslab/user",
-        "file": "init.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I../lib",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "stressfs.o",
-            "stressfs.c"
-        ],
-        "directory": "/home/levan/nju-oslab/user",
-        "file": "stressfs.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I./include",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "main.o",
-            "main.c"
-        ],
-        "directory": "/home/levan/nju-oslab/kernel",
-        "file": "main.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I../lib",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "forktest.o",
-            "forktest.c"
-        ],
-        "directory": "/home/levan/nju-oslab/user",
-        "file": "forktest.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I../lib",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "../lib/string.o",
-            "../lib/string.c"
-        ],
-        "directory": "/home/levan/nju-oslab/user",
-        "file": "../lib/string.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I../lib",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "synctest.o",
-            "synctest.c"
-        ],
-        "directory": "/home/levan/nju-oslab/user",
-        "file": "synctest.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I../lib",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "../lib/syscall.o",
-            "../lib/syscall.c"
-        ],
-        "directory": "/home/levan/nju-oslab/user",
-        "file": "../lib/syscall.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I./include",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "kernel/fs.o",
-            "kernel/fs.c"
-        ],
-        "directory": "/home/levan/nju-oslab/kernel",
-        "file": "kernel/fs.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I../lib",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "iotest.o",
-            "iotest.c"
-        ],
-        "directory": "/home/levan/nju-oslab/user",
-        "file": "iotest.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-Os",
-            "-g",
-            "-fno-asynchronous-unwind-tables",
-            "-o",
-            "boot.o",
-            "boot.c"
-        ],
-        "directory": "/home/levan/nju-oslab/bootloader",
-        "file": "boot.c"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-o",
-            "start.o",
-            "start.S"
-        ],
-        "directory": "/home/levan/nju-oslab/bootloader",
-        "file": "start.S"
-    },
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-m32",
-            "-march=i386",
-            "-fno-builtin",
-            "-fno-stack-protector",
-            "-fno-omit-frame-pointer",
-            "-Wall",
-            "-Werror",
-            "-O2",
-            "-I../lib",
-            "-g",
-            "-fno-pic",
-            "-o",
-            "primes.o",
-            "primes.c"
-        ],
-        "directory": "/home/levan/nju-oslab/user",
-        "file": "primes.c"
+        "file": "kernel/i8259.c"
     },
     {
         "arguments": [
@@ -955,11 +469,24 @@
             "-g",
             "-fno-pic",
             "-o",
-            "../lib/start.o",
-            "../lib/start.c"
+            "../lib/sync.o",
+            "../lib/sync.c"
         ],
         "directory": "/home/levan/nju-oslab/user",
-        "file": "../lib/start.c"
+        "file": "../lib/sync.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-I./include",
+            "-o",
+            "kernel/doIrq.o",
+            "kernel/doIrq.S"
+        ],
+        "directory": "/home/levan/nju-oslab/kernel",
+        "file": "kernel/doIrq.S"
     },
     {
         "arguments": [
@@ -977,11 +504,33 @@
             "-g",
             "-fno-pic",
             "-o",
-            "../lib/stdlib.o",
-            "../lib/stdlib.c"
+            "primes.o",
+            "primes.c"
         ],
         "directory": "/home/levan/nju-oslab/user",
-        "file": "../lib/stdlib.c"
+        "file": "primes.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
+            "-I../lib",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "pingpong.o",
+            "pingpong.c"
+        ],
+        "directory": "/home/levan/nju-oslab/user",
+        "file": "pingpong.c"
     },
     {
         "arguments": [
@@ -1017,15 +566,147 @@
             "-Wall",
             "-Werror",
             "-O2",
+            "-I./include",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "kernel/vga.o",
+            "kernel/vga.c"
+        ],
+        "directory": "/home/levan/nju-oslab/kernel",
+        "file": "kernel/vga.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
             "-I../lib",
             "-g",
             "-fno-pic",
             "-o",
-            "../lib/sync.o",
-            "../lib/sync.c"
+            "../lib/start.o",
+            "../lib/start.c"
         ],
         "directory": "/home/levan/nju-oslab/user",
-        "file": "../lib/sync.c"
+        "file": "../lib/start.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
+            "-I../lib",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "cat.o",
+            "cat.c"
+        ],
+        "directory": "/home/levan/nju-oslab/user",
+        "file": "cat.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
+            "-I./include",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "kernel/disk.o",
+            "kernel/disk.c"
+        ],
+        "directory": "/home/levan/nju-oslab/kernel",
+        "file": "kernel/disk.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
+            "-I../lib",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "../lib/sys.o",
+            "../lib/sys.S"
+        ],
+        "directory": "/home/levan/nju-oslab/user",
+        "file": "../lib/sys.S"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
+            "-I../lib",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "iotest.o",
+            "iotest.c"
+        ],
+        "directory": "/home/levan/nju-oslab/user",
+        "file": "iotest.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
+            "-I./include",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "kernel/proc.o",
+            "kernel/proc.c"
+        ],
+        "directory": "/home/levan/nju-oslab/kernel",
+        "file": "kernel/proc.c"
     },
     {
         "arguments": [
@@ -1061,14 +742,333 @@
             "-Wall",
             "-Werror",
             "-O2",
+            "-I./include",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "kernel/irqHandle.o",
+            "kernel/irqHandle.c"
+        ],
+        "directory": "/home/levan/nju-oslab/kernel",
+        "file": "kernel/irqHandle.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-o",
+            "start.o",
+            "start.S"
+        ],
+        "directory": "/home/levan/nju-oslab/bootloader",
+        "file": "start.S"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
             "-I../lib",
             "-g",
             "-fno-pic",
             "-o",
-            "rm.o",
-            "rm.c"
+            "../lib/syscall.o",
+            "../lib/syscall.c"
         ],
         "directory": "/home/levan/nju-oslab/user",
-        "file": "rm.c"
+        "file": "../lib/syscall.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
+            "-I./include",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "kernel/kvm.o",
+            "kernel/kvm.c"
+        ],
+        "directory": "/home/levan/nju-oslab/kernel",
+        "file": "kernel/kvm.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
+            "-I../lib",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "forktest.o",
+            "forktest.c"
+        ],
+        "directory": "/home/levan/nju-oslab/user",
+        "file": "forktest.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-Os",
+            "-g",
+            "-fno-asynchronous-unwind-tables",
+            "-o",
+            "boot.o",
+            "boot.c"
+        ],
+        "directory": "/home/levan/nju-oslab/bootloader",
+        "file": "boot.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
+            "-I../lib",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "../lib/string.o",
+            "../lib/string.c"
+        ],
+        "directory": "/home/levan/nju-oslab/user",
+        "file": "../lib/string.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
+            "-I./include",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "kernel/device.o",
+            "kernel/device.c"
+        ],
+        "directory": "/home/levan/nju-oslab/kernel",
+        "file": "kernel/device.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
+            "-I../lib",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "../lib/stdio.o",
+            "../lib/stdio.c"
+        ],
+        "directory": "/home/levan/nju-oslab/user",
+        "file": "../lib/stdio.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
+            "-I../lib",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "ls.o",
+            "ls.c"
+        ],
+        "directory": "/home/levan/nju-oslab/user",
+        "file": "ls.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
+            "-I../lib",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "stressfs.o",
+            "stressfs.c"
+        ],
+        "directory": "/home/levan/nju-oslab/user",
+        "file": "stressfs.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
+            "-I../lib",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "synctest.o",
+            "synctest.c"
+        ],
+        "directory": "/home/levan/nju-oslab/user",
+        "file": "synctest.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
+            "-I../lib",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "producer.o",
+            "producer.c"
+        ],
+        "directory": "/home/levan/nju-oslab/user",
+        "file": "producer.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
+            "-I../lib",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "childtest.o",
+            "childtest.c"
+        ],
+        "directory": "/home/levan/nju-oslab/user",
+        "file": "childtest.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
+            "-I../lib",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "wc.o",
+            "wc.c"
+        ],
+        "directory": "/home/levan/nju-oslab/user",
+        "file": "wc.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-m32",
+            "-march=i386",
+            "-fno-builtin",
+            "-fno-stack-protector",
+            "-fno-omit-frame-pointer",
+            "-Wall",
+            "-Werror",
+            "-O2",
+            "-I./include",
+            "-g",
+            "-fno-pic",
+            "-o",
+            "kernel/lib.o",
+            "kernel/lib.c"
+        ],
+        "directory": "/home/levan/nju-oslab/kernel",
+        "file": "kernel/lib.c"
     }
 ]
