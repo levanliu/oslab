@@ -1,6 +1,7 @@
 #ifndef __PROC__
 #define __PROC__
 
+#include "x86/memory.h"
 #define MAX_OPEN_FILE 32
 
 typedef struct proc {

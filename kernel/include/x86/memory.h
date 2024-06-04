@@ -62,7 +62,9 @@
 #define PAGE_UP(addr) (((uint32_t)addr + 0xfff) & 0xfffff000)
 
 #ifndef __ASSEMBLER__
+#include "common.h"
 struct GateDescriptor {
+	
 	uint32_t offset_15_0      : 16;
 	uint32_t segment          : 16;
 	uint32_t pad0             : 8;
