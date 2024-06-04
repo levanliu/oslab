@@ -9,12 +9,12 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu:20.04
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
     - name: install dependency
-      run: sudo apt-get install build-essential make
+      run: sudo apt-get install build-essential make gcc-multilib
     - name: make clean
       run: make clean
     - name: make all
