@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: update
+      run: sudo apt-get update --fix-missing
     - name: install dependency
       run: sudo apt-get install build-essential make gcc-multilib
     - name: make clean
