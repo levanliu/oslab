@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: install dependency
+      run: apt-get install build-essential make
     - name: make clean
       run: make clean
     - name: make all
