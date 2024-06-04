@@ -14,9 +14,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Replace Composer Mirror
-        run: |
-          composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
-          composer install --no-interaction --optimize-autoloader --no-scripts --prefer-dist
+      run: composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
+      run: composer install --no-interaction --optimize-autoloader --no-scripts --prefer-dist
     - name: update
       run: sudo apt-get update --fix-missing
     - name: install dependency
