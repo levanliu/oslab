@@ -25,5 +25,3 @@ jobs:
       run: make clean
     - name: make all
       run: make all
-    - name: make play
-      run: make play
