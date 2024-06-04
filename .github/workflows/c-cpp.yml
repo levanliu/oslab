@@ -13,11 +13,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Replace Composer Mirror
-      run: composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
-      run: composer install --no-interaction --optimize-autoloader --no-scripts --prefer-dist
+    - name: Replace Mirror archive
+      run: sudo sed -i "s@http://.*archive.ubuntu.com@https://mirrors.tuna.tsinghua.edu.cn@g" /etc/apt/sources.list
+    - name: Replace Mirror security
+      run: sudo sed -i "s@http://.*security.ubuntu.com@https://mirrors.tuna.tsinghua.edu.cn@g" /etc/apt/sources.list
     - name: update
-      run: sudo apt-get update --fix-missing
+      run: sudo apt-get update
     - name: install dependency
       run: sudo apt-get install build-essential make gcc-multilib
     - name: make clean
