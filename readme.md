@@ -1,5 +1,5 @@
 ### Readme
-this project is a linux-like operate system running on i386 inter chip.
+this project is a linux-like operate system running on i386 intel chip.
 
 #### build and run.
 install bear to generate compile_commands.json for clangd

@@ -2,7 +2,6 @@
 os.img
 *.o
 .cache
-.cache/clangd/index/memory.h.0DE3C5828551EDE9.idx
 disk/bash
 disk/cat
 disk/childtest
@@ -50,3 +49,8 @@ user/synctest
 user/wc
 user/yieldtest
 user/zhexuejia
+bootloader/bootloader.bin
+.cache/clangd/index/proc.h.11781C1CB3F613E6.idx
+bootloader/bootloader.elf
+utils/mkfs
+.cache/clangd/index/*
