@@ -2,9 +2,14 @@
 this project is a linux-like operate system running on i386 intel chip.
 
 #### build and run.
+
+
 install bear to generate compile_commands.json for clangd
 ```bash
+    sudo apt install gcc-multilib g++-multilib libc6-dev libc6-dev-i386
+    sudo apt-get install qemu-system-i386
     sudo apt install bear
+    export DISPLAY=172.31.96.1:0
     bear make all && make play
 ```
 just play.
