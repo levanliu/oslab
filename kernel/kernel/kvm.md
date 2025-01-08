@@ -1,5 +1,4 @@
-kernel memory management system, specifically dealing with page allocation, deallocation, and page table management. Here's a breakdown of each function:
-
+kernel memory management system, specifically dealing with page allocation, deallocation, and page table management. 
 ### `kfree(void *m)`
 This function deallocates a page of memory.
 1. **Assertion**: Ensures the memory address `m` is page-aligned.
