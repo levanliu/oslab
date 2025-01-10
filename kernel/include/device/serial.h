@@ -1,5 +1,6 @@
 #ifndef __SERIAL_H__
 #define __SERIAL_H__
+#include "common/types.h"
 
 void initSerial(void);
 void putChar(char);

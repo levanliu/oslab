@@ -1,5 +1,7 @@
 #ifndef __LIB__
 #define __LIB__
+#include "common/types.h"
+#include "x86/memory.h"
 
 void memcpy(void *dst, const void *src, uint32_t size);
 void memset(void *dst, int c, uint32_t size);
